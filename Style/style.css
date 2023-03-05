@@ -1,0 +1,87 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* end global rules */
+.popup {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.popup .btn {
+  display: flex;
+  background: #e3f2fd;
+}
+.popup button {
+  margin: 30px auto;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: cornflowerblue;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+.popup .colors {
+  padding: 10px;
+  background: white;
+}
+.popup .colors .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+.popup .colors .head p {
+  font-weight: bold;
+}
+.popup .colors .head span {
+  color: #42a5f5;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+.popup .colors .colors-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.popup .colors-list li {
+  max-width: calc(25% - 15px);
+  flex: 1;
+}
+.popup .colors-list span {
+  padding: 0 10px;
+  margin-right: 10px;
+  box-shadow: 0.5px 0.5px 1px 0px #00000033;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup .colors-list p {
+  display: inline;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
